@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160" viewBox="0 0 600 160">
+  <rect width="600" height="160" fill="#fafafa" rx="8"/>
+  <text x="20" y="28" font-size="13" font-family="'Segoe UI',Arial,sans-serif" fill="#333" font-weight="bold">⚙️ Dev Ops — 开发工具 &amp; 基础设施</text>
+  <text x="25" y="50" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Docker · 容器化部署，环境一致性强</text>
+  <text x="25" y="72" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Git · 分布式版本控制，协作开发标配</text>
+  <text x="25" y="94" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Linux · 开源操作系统，服务器首选</text>
+  <text x="25" y="116" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">VS Code · 轻量级编辑器，插件生态强大</text>
+  <text x="25" y="138" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">GitHub · 代码托管平台，开源协作社区</text>
+</svg>

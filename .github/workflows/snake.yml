@@ -1,0 +1,39 @@
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate the snake SVGs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+
+      - name: Remove progress bars and commit
+        run: |
+          for f in dist/*.svg; do sed -i '/<rect class="u u[0-9]"/d' "$f"; done
+          cp dist/snake.svg snake.svg
+          cp dist/snake-dark.svg snake-dark.svg
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet snake.svg snake-dark.svg; then
+            git add snake.svg snake-dark.svg
+            git commit -m "Update snake animation"
+            git push
+          else
+            echo "No changes to snake SVGs"
+          fi

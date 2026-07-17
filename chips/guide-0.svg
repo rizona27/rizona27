@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160" viewBox="0 0 600 160">
+  <rect width="600" height="160" fill="#fafafa" rx="8"/>
+  <text x="20" y="28" font-size="13" font-family="'Segoe UI',Arial,sans-serif" fill="#333" font-weight="bold">🤖 AI Models — 大语言模型 &amp; 基础模型</text>
+  <text x="25" y="50" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Claude · Anthropic 出品，安全与推理能力见长</text>
+  <text x="25" y="72" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">ChatGPT · OpenAI 旗舰模型，多模态理解与生成</text>
+  <text x="25" y="94" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">DeepSeek · 国产开源模型，代码与数学推理突出</text>
+  <text x="25" y="116" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Gemini · Google 多模态模型，原生支持长上下文</text>
+  <text x="25" y="138" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Qwen · 阿里开源模型系列，多尺寸覆盖全场景</text>
+</svg>

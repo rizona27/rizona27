@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="120" viewBox="0 0 600 120">
+  <rect width="600" height="120" fill="#fafafa" rx="8"/>
+  <text x="20" y="28" font-size="13" font-family="'Segoe UI',Arial,sans-serif" fill="#333" font-weight="bold">🗄️ Data — 数据库 &amp; 存储方案</text>
+  <text x="25" y="50" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">PostgreSQL · 开源关系型数据库，支持向量检索 (pgvector)</text>
+  <text x="25" y="72" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Redis · 高性能缓存，支持向量检索与消息队列</text>
+  <text x="25" y="94" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Supabase · Firebase 开源替代，PostgreSQL + 实时订阅</text>
+</svg>

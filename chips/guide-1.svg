@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180">
+  <rect width="600" height="180" fill="#fafafa" rx="8"/>
+  <text x="20" y="28" font-size="13" font-family="'Segoe UI',Arial,sans-serif" fill="#333" font-weight="bold">🔧 AI Tools — 智能体 &amp; 编排框架</text>
+  <text x="25" y="50" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">LangChain · LLM 应用开发框架，链式调用与工具集成</text>
+  <text x="25" y="72" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">MCP · Model Context Protocol，AI 与外部工具的标准化接口</text>
+  <text x="25" y="94" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Dify · 低代码 AI 应用开发平台，快速搭建 RAG / Agent</text>
+  <text x="25" y="116" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">Ollama · 本地大模型运行工具，一键部署开源模型</text>
+  <text x="25" y="138" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">HuggingFace · 模型与数据集社区，NLP / CV 资源宝库</text>
+  <text x="25" y="160" font-size="11" font-family="'Segoe UI',Arial,sans-serif" fill="#555">n8n · 开源工作流自动化，可视化编排 API &amp; AI 流程</text>
+</svg>

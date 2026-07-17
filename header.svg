@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" width="900" height="270" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif">
+  <title>rizona27 — blooming banner</title>
+  <defs>
+    <path id="petal" d="M0 0 C-13 -16 -14 -44 0 -56 C14 -44 13 -16 0 0 Z"/>
+    <path id="smallPetal" d="M0 0 C-8 -10 -9 -28 0 -36 C9 -28 8 -10 0 0 Z"/>
+    <path id="leaf" d="M0 0 Q-22 -7 -30 -26 Q-9 -22 0 0 Z"/>
+    <linearGradient id="pg" x1="0" y1="0" x2="0" y2="-56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8603C"/>
+      <stop offset="1" stop-color="#FBC7B3"/>
+    </linearGradient>
+    <linearGradient id="pg2" x1="0" y1="0" x2="0" y2="-56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ED8B66"/>
+      <stop offset="1" stop-color="#F09A7E"/>
+    </linearGradient>
+    <radialGradient id="cg">
+      <stop offset="0" stop-color="#FFE9CF"/>
+      <stop offset="1" stop-color="#F9B98A"/>
+    </radialGradient>
+    <radialGradient id="cg2">
+      <stop offset="0" stop-color="#FFF3E0"/>
+      <stop offset="1" stop-color="#F4B183"/>
+    </radialGradient>
+    <linearGradient id="lg" x1="0" y1="0" x2="-30" y2="-26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FA36B"/>
+      <stop offset="1" stop-color="#A8C79A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- subtle warm sky glow -->
+  <ellipse cx="450" cy="60" rx="420" ry="60" fill="#FFD9A0" opacity="0.06">
+    <animate attributeName="opacity" values="0.04;0.08;0.04" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- sun with pulsing halo and rotating rays -->
+  <g transform="translate(846,38)">
+    <circle r="32" fill="#FFD9A0" opacity="0.08">
+      <animate attributeName="opacity" values="0.05;0.14;0.05" keyTimes="0;0.5;1" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="28;34;28" keyTimes="0;0.5;1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="20" fill="#FFD9A0" opacity="0.18">
+      <animate attributeName="opacity" values="0.12;0.24;0.12" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <g opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="90s" repeatCount="indefinite"/>
+      <path d="M0 -15 L2.5 -24 L-2.5 -24 Z" fill="#FFC069" transform="rotate(0)"/>
+      <path d="M0 -15 L2.5 -24 L-2.5 -24 Z" fill="#FFC069" transform="rotate(45)"/>
+      <path d="M0 -15 L2.5 -24 L-2.5 -24 Z" fill="#FFC069" transform="rotate(90)"/>
+      <path d="M0 -15 L2.5 -24 L-2.5 -24 Z" fill="#FFC069" transform="rotate(135)"/>
+      <path d="M0 -15 L2.5 -24 L-2.5 -24 Z" fill="#FFC069" transform="rotate(180)"/>
+      <path d="M0 -15 L2.5 -24 L-2.5 -24 Z" fill="#FFC069" transform="rotate(225)"/>
+      <path d="M0 -15 L2.5 -24 L-2.5 -24 Z" fill="#FFC069" transform="rotate(270)"/>
+      <path d="M0 -15 L2.5 -24 L-2.5 -24 Z" fill="#FFC069" transform="rotate(315)"/>
+    </g>
+    <circle r="10" fill="#FFC069"/>
+    <circle r="10" fill="#FFE3B8" opacity="0.4"/>
+  </g>
+
+  <!-- soft ground with subtle warm pulse -->
+  <ellipse cx="450" cy="252" rx="480" ry="24" fill="#FBC7B3" opacity="0.14">
+    <animate attributeName="opacity" values="0.12;0.18;0.12" keyTimes="0;0.5;1" dur="7s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- grass background blades -->
+  <g stroke="#8CB07A" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.45">
+    <path d="M88 242 Q92 228 89 218" stroke-dasharray="30" stroke-dashoffset="30">
+      <animate attributeName="stroke-dashoffset" from="30" to="0" begin="0.3s" dur="0.5s" fill="freeze"/>
+    </path>
+    <path d="M155 242 Q160 226 154 214" stroke-dasharray="34" stroke-dashoffset="34">
+      <animate attributeName="stroke-dashoffset" from="34" to="0" begin="0.45s" dur="0.55s" fill="freeze"/>
+    </path>
+    <path d="M245 242 Q250 228 243 216" stroke-dasharray="32" stroke-dashoffset="32">
+      <animate attributeName="stroke-dashoffset" from="32" to="0" begin="0.55s" dur="0.5s" fill="freeze"/>
+    </path>
+    <path d="M395 242 Q400 226 393 213" stroke-dasharray="36" stroke-dashoffset="36">
+      <animate attributeName="stroke-dashoffset" from="36" to="0" begin="0.4s" dur="0.6s" fill="freeze"/>
+    </path>
+    <path d="M510 242 Q505 228 512 216" stroke-dasharray="33" stroke-dashoffset="33">
+      <animate attributeName="stroke-dashoffset" from="33" to="0" begin="0.5s" dur="0.55s" fill="freeze"/>
+    </path>
+    <path d="M680 242 Q685 226 677 213" stroke-dasharray="35" stroke-dashoffset="35">
+      <animate attributeName="stroke-dashoffset" from="35" to="0" begin="0.6s" dur="0.5s" fill="freeze"/>
+    </path>
+    <path d="M800 242 Q795 228 802 218" stroke-dasharray="28" stroke-dashoffset="28">
+      <animate attributeName="stroke-dashoffset" from="28" to="0" begin="0.65s" dur="0.5s" fill="freeze"/>
+    </path>
+  </g>
+
+  <!-- stems with gentle sway after growth -->
+  <g stroke="#7FA36B" fill="none" stroke-linecap="round">
+    <!-- Left big stem -->
+    <path d="M130 242 C138 202 120 148 130 112" stroke-width="4.5" stroke-dasharray="142" stroke-dashoffset="142">
+      <animate attributeName="stroke-dashoffset" from="142" to="0" begin="0s" dur="1s" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.3 1" fill="freeze"/>
+    </path>
+    <!-- Center stem -->
+    <path d="M320 242 C326 214 310 188 316 160" stroke-width="3.5" stroke-dasharray="100" stroke-dashoffset="100">
+      <animate attributeName="stroke-dashoffset" from="100" to="0" begin="0.25s" dur="0.85s" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.3 1" fill="freeze"/>
+    </path>
+    <!-- Right big stem -->
+    <path d="M530 242 C522 200 538 156 528 114" stroke-width="4.5" stroke-dasharray="140" stroke-dashoffset="140">
+      <animate attributeName="stroke-dashoffset" from="140" to="0" begin="0.15s" dur="1s" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.3 1" fill="freeze"/>
+    </path>
+    <!-- Right small stem -->
+    <path d="M700 242 C694 212 706 176 700 148" stroke-width="3" stroke-dasharray="106" stroke-dashoffset="106">
+      <animate attributeName="stroke-dashoffset" from="106" to="0" begin="0.35s" dur="0.8s" calcMode="spline" keyTimes="0;1" keySplines="0.3 0 0.3 1" fill="freeze"/>
+    </path>
+  </g>
+
+  <!-- leaves: grow in with slight delayed sway -->
+  <g transform="translate(130,194)">
+    <use href="#leaf" fill="url(#lg)" opacity="0" transform="scale(0)">
+      <animate attributeName="opacity" from="0" to="1" begin="0.55s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" begin="0.55s" dur="0.55s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.3 1" fill="freeze"/>
+    </use>
+  </g>
+  <g transform="translate(125,162) scale(-1,1)">
+    <use href="#leaf" fill="url(#lg)" opacity="0" transform="scale(0)">
+      <animate attributeName="opacity" from="0" to="1" begin="0.7s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" begin="0.7s" dur="0.55s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.3 1" fill="freeze"/>
+    </use>
+  </g>
+  <g transform="translate(528,190) scale(-1,1)">
+    <use href="#leaf" fill="url(#lg)" opacity="0" transform="scale(0)">
+      <animate attributeName="opacity" from="0" to="1" begin="0.65s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" begin="0.65s" dur="0.55s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.3 1" fill="freeze"/>
+    </use>
+  </g>
+  <g transform="translate(533,158)">
+    <use href="#leaf" fill="url(#lg)" opacity="0" transform="scale(0)">
+      <animate attributeName="opacity" from="0" to="1" begin="0.8s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" begin="0.8s" dur="0.55s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.3 1" fill="freeze"/>
+    </use>
+  </g>
+  <g transform="translate(316,218) scale(0.5)">
+    <use href="#leaf" fill="url(#lg)" opacity="0" transform="scale(0)">
+      <animate attributeName="opacity" from="0" to="1" begin="0.85s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" begin="0.85s" dur="0.5s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.3 1" fill="freeze"/>
+    </use>
+  </g>
+  <g transform="translate(700,220) scale(-0.5,0.5)">
+    <use href="#leaf" fill="url(#lg)" opacity="0" transform="scale(0)">
+      <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" begin="0.9s" dur="0.5s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.3 1" fill="freeze"/>
+    </use>
+  </g>
+
+  <!-- ===== flower 1 : left big (peach gradient) ===== -->
+  <g transform="translate(130,110)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 0 0;2 0 0;0 0 0;-2 0 0;0 0 0" keyTimes="0;0.25;0.5;0.75;1" dur="7s" begin="2.5s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="0 0 0" begin="0.9s" dur="1.3s" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="0.9s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="0.9s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="45 0 0" begin="0.96s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="0.96s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="0.96s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-45 0 0" begin="1.02s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.02s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.02s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="90 0 0" begin="1.08s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.08s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.08s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-90 0 0" begin="1.14s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.14s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.14s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="135 0 0" begin="1.2s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.2s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.2s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-135 0 0" begin="1.26s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.26s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.26s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="180 0 0" begin="1.32s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.32s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.32s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <!-- center: spring-pop with overshoot -->
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.5s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="scale" values="0;1.15;0.92;1" keyTimes="0;0.7;0.85;1" begin="1.8s" dur="0.75s" calcMode="spline" keySplines="0.2 0.9 0.3 1;0.3 0 0.4 1;0.3 0 0.5 1" fill="freeze"/>
+        <circle r="15" fill="#E2542F"/>
+        <circle r="10" fill="url(#cg)"/>
+        <g fill="#E2542F">
+          <circle cx="0" cy="-5.8" r="1.3"/><circle cx="5" cy="-2.9" r="1.3"/><circle cx="5" cy="2.9" r="1.3"/>
+          <circle cx="0" cy="5.8" r="1.3"/><circle cx="-5" cy="2.9" r="1.3"/><circle cx="-5" cy="-2.9" r="1.3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== flower 2 : center (warm orange, smaller) ===== -->
+  <g transform="translate(320,160) scale(0.7)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 0 0;-2.4 0 0;0 0 0;2.4 0 0;0 0 0" keyTimes="0;0.25;0.5;0.75;1" dur="6.5s" begin="2.8s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="0 0 0" begin="1.15s" dur="1.2s" fill="freeze"/><use href="#petal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.15s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.15s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="45 0 0" begin="1.2s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.2s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.2s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-45 0 0" begin="1.25s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.25s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.25s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="90 0 0" begin="1.3s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.3s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.3s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-90 0 0" begin="1.35s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.35s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.35s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="135 0 0" begin="1.4s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.4s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.4s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-135 0 0" begin="1.45s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.45s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.45s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="180 0 0" begin="1.5s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.5s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.5s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="2s" dur="0.5s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="scale" values="0;1.12;0.94;1" keyTimes="0;0.7;0.85;1" begin="2s" dur="0.7s" calcMode="spline" keySplines="0.2 0.9 0.3 1;0.3 0 0.4 1;0.3 0 0.5 1" fill="freeze"/>
+        <circle r="14" fill="#E2542F"/>
+        <circle r="9" fill="url(#cg2)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== flower 3 : right big ===== -->
+  <g transform="translate(530,112)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 0 0;-2 0 0;0 0 0;2 0 0;0 0 0" keyTimes="0;0.25;0.5;0.75;1" dur="7.2s" begin="2.6s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="0 0 0" begin="1s" dur="1.3s" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-45 0 0" begin="1.06s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.06s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.06s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="45 0 0" begin="1.12s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.12s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.12s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-90 0 0" begin="1.18s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.18s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.18s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="90 0 0" begin="1.24s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.24s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.24s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-135 0 0" begin="1.3s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.3s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.3s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="135 0 0" begin="1.36s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.36s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.36s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="180 0 0" begin="1.42s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#petal" fill="url(#pg)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.42s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.42s" dur="1.3s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="1.9s" dur="0.5s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="scale" values="0;1.15;0.92;1" keyTimes="0;0.7;0.85;1" begin="1.9s" dur="0.75s" calcMode="spline" keySplines="0.2 0.9 0.3 1;0.3 0 0.4 1;0.3 0 0.5 1" fill="freeze"/>
+        <circle r="15" fill="#E2542F"/>
+        <circle r="10" fill="url(#cg)"/>
+        <g fill="#E2542F">
+          <circle cx="0" cy="-5.8" r="1.3"/><circle cx="5" cy="-2.9" r="1.3"/><circle cx="5" cy="2.9" r="1.3"/>
+          <circle cx="0" cy="5.8" r="1.3"/><circle cx="-5" cy="2.9" r="1.3"/><circle cx="-5" cy="-2.9" r="1.3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== flower 4 : right small ===== -->
+  <g transform="translate(700,148) scale(0.5)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 0 0;2.5 0 0;0 0 0;-2.5 0 0;0 0 0" keyTimes="0;0.25;0.5;0.75;1" dur="6s" begin="3s" repeatCount="indefinite"/>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="0 0 0" begin="1.35s" dur="1.2s" fill="freeze"/><use href="#smallPetal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.35s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.35s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="45 0 0" begin="1.4s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#smallPetal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.4s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.4s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-45 0 0" begin="1.45s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#smallPetal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.45s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.45s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="90 0 0" begin="1.5s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#smallPetal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.5s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.5s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-90 0 0" begin="1.55s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#smallPetal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.55s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.55s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="135 0 0" begin="1.6s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#smallPetal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.6s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.6s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-135 0 0" begin="1.65s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#smallPetal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.65s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.65s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="180 0 0" begin="1.7s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/><use href="#smallPetal" fill="url(#pg2)" opacity="0" transform="scale(0.15)"><animate attributeName="opacity" from="0" to="0.95" begin="1.7s" dur="0.4s" fill="freeze"/><animateTransform attributeName="transform" type="scale" from="0.15" to="1" begin="1.7s" dur="1.2s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/></use></g>
+      <g opacity="0">
+        <animate attributeName="opacity" from="0" to="1" begin="2.15s" dur="0.5s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="scale" values="0;1.12;0.95;1" keyTimes="0;0.7;0.85;1" begin="2.15s" dur="0.65s" calcMode="spline" keySplines="0.2 0.9 0.3 1;0.3 0 0.4 1;0.3 0 0.5 1" fill="freeze"/>
+        <circle r="14" fill="#E2542F"/>
+        <circle r="9" fill="url(#cg2)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- drifting petals: more variety and irregular paths -->
+  <g transform="translate(250,45)" opacity="0">
+    <animate attributeName="opacity" values="0;0.55;0.55;0" keyTimes="0;0.12;0.65;1" dur="9s" begin="3s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;24 82;12 185" keyTimes="0;0.5;1" dur="9s" begin="3s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#F4795B" transform="scale(0.2)">
+        <animateTransform attributeName="transform" type="rotate" values="0 0 0;145 0 0;340 0 0" keyTimes="0;0.5;1" dur="9s" begin="3s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+  </g>
+  <g transform="translate(620,30)" opacity="0">
+    <animate attributeName="opacity" values="0;0.45;0.45;0" keyTimes="0;0.14;0.6;1" dur="10.5s" begin="4.5s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-30 95;-18 205" keyTimes="0;0.5;1" dur="10.5s" begin="4.5s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#FBC7B3" transform="scale(0.22)">
+        <animateTransform attributeName="transform" type="rotate" values="0 0 0;-160 0 0;-380 0 0" keyTimes="0;0.5;1" dur="10.5s" begin="4.5s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+  </g>
+  <g transform="translate(440,20)" opacity="0">
+    <animate attributeName="opacity" values="0;0.4;0.4;0" keyTimes="0;0.15;0.6;1" dur="11s" begin="5.8s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;18 78;-8 175" keyTimes="0;0.5;1" dur="11s" begin="5.8s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#F09A7E" transform="scale(0.16)">
+        <animateTransform attributeName="transform" type="rotate" values="0 0 0;120 0 0;310 0 0" keyTimes="0;0.5;1" dur="11s" begin="5.8s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+  </g>
+  <g transform="translate(150,60)" opacity="0">
+    <animate attributeName="opacity" values="0;0.35;0.35;0" keyTimes="0;0.14;0.6;1" dur="12s" begin="6.5s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-16 70;-26 160" keyTimes="0;0.5;1" dur="12s" begin="6.5s" repeatCount="indefinite"/>
+      <use href="#smallPetal" fill="#F4B183" transform="scale(0.25)">
+        <animateTransform attributeName="transform" type="rotate" values="0 0 0;-100 0 0;-260 0 0" keyTimes="0;0.5;1" dur="12s" begin="6.5s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+  </g>
+  <g transform="translate(750,40)" opacity="0">
+    <animate attributeName="opacity" values="0;0.38;0.38;0" keyTimes="0;0.13;0.58;1" dur="11.5s" begin="7s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;22 80;8 180" keyTimes="0;0.5;1" dur="11.5s" begin="7s" repeatCount="indefinite"/>
+      <use href="#smallPetal" fill="#ED8B66" transform="scale(0.18)">
+        <animateTransform attributeName="transform" type="rotate" values="0 0 0;170 0 0;350 0 0" keyTimes="0;0.5;1" dur="11.5s" begin="7s" repeatCount="indefinite" additive="sum"/>
+      </use>
+    </g>
+  </g>
+
+  <!-- tiny glowing particles (pollen/sparkles drifting up) -->
+  <g transform="translate(340,160)"><circle r="1.2" fill="#FFD9A0" opacity="0"><animate attributeName="opacity" values="0;0.7;0" keyTimes="0;0.5;1" dur="6s" begin="2s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-8 -40;-20 -80" keyTimes="0;0.5;1" dur="6s" begin="2s" repeatCount="indefinite"/></circle></g>
+  <g transform="translate(480,130)"><circle r="1" fill="#FFE3B8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" keyTimes="0;0.5;1" dur="5.5s" begin="3.5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;10 -35;20 -70" keyTimes="0;0.5;1" dur="5.5s" begin="3.5s" repeatCount="indefinite"/></circle></g>
+  <g transform="translate(200,180)"><circle r="1.3" fill="#FFDCA8" opacity="0"><animate attributeName="opacity" values="0;0.55;0" keyTimes="0;0.5;1" dur="7s" begin="4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-12 -50;-24 -95" keyTimes="0;0.5;1" dur="7s" begin="4s" repeatCount="indefinite"/></circle></g>
+  <g transform="translate(600,150)"><circle r="1.1" fill="#FFD9A0" opacity="0"><animate attributeName="opacity" values="0;0.5;0" keyTimes="0;0.5;1" dur="5s" begin="2.8s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;6 -38;12 -72" keyTimes="0;0.5;1" dur="5s" begin="2.8s" repeatCount="indefinite"/></circle></g>
+
+  <!-- text: bottom of banner, fades in with gentle rise -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.9s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" begin="1.6s" dur="0.9s" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1" fill="freeze"/>
+    <text x="450" y="262" text-anchor="middle" font-size="15" font-weight="600" letter-spacing="1.3" fill="#E8603C">
+      WITH THE HELP OF AI, EVERYONE CAN TURN THEIR IDEAS INTO REALITY
+      <animate attributeName="fill" values="#E8603C;#ED8B66;#E8603C" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
