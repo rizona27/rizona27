@@ -1,6 +1,12 @@
 name: Update Sky & Footer (Weather)
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/gen_scene.py"
+      - ".github/workflows/sky.yml"
   schedule:
     - cron: "37 */3 * * *"
   workflow_dispatch:
