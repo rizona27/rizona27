@@ -555,7 +555,7 @@ def gen_sky(w, s):
     base.append(weather_layer(w, rnd, H))
     if s in ("spring", "summer") and w in ("clear", "clouds"):
         base.append(butterfly_patrol("M880 30 C700 60 560 5 420 40 C300 68 160 15 20 38 C160 62 340 20 520 50 C680 72 800 45 880 30", 15))
-    base.append(f'<text x="893" y="64" text-anchor="end" font-size="9" letter-spacing="1.5" fill="#8b949e">{w.upper()} · {s.upper()} · 嵊州</text>')
+    base.append(f'<text x="893" y="64" text-anchor="end" font-size="9" letter-spacing="1.5" fill="#8b949e">{w.upper()} · {s.upper()} · SZ</text>')
 
     def wrap(inner):
         return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 70" width="900" height="70" '
