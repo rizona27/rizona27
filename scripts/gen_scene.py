@@ -9,6 +9,7 @@ import math
 import random
 import re
 import sys
+import time
 import urllib.request
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -66,9 +67,36 @@ def stars(n, xlo, xhi, ylo, yhi, seed):
 
 
 # ---------------- weather / season ----------------
+def state_weather():
+    try:
+        return open(STATE).read().strip().split("-")[0] or None
+    except OSError:
+        return None
+
+
+def fetch_weather_code(url, tries=3, timeout=8):
+    """Fetch weather_code with short timeouts + backoff; raises only after the last try."""
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "rizona27-scene/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return json.load(r)["current"]["weather_code"]
+        except Exception as e:
+            print(f"weather fetch {i + 1}/{tries} failed: {e}", file=sys.stderr)
+            if i == tries - 1:
+                raise
+            time.sleep(2 ** i)
+
+
 def fetch_weather():
     url = f"https://api.open-meteo.com/v1/forecast?latitude={LAT}&longitude={LON}&current=weather_code"
-    code = json.load(urllib.request.urlopen(url, timeout=20))["current"]["weather_code"]
+    try:
+        code = fetch_weather_code(url)
+    except Exception:
+        # Weather is decorative: on network hiccups keep the previous look instead of failing CI.
+        fallback = state_weather() or "clear"
+        print(f"weather unavailable, falling back to {fallback}", file=sys.stderr)
+        return fallback
     if code >= 95:
         return "storm"
     if code in (71, 73, 75, 77, 85, 86):
