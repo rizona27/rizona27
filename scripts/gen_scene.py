@@ -739,8 +739,8 @@ def main():
     open("sky.svg", "w").write(day)
     open("sky-night.svg", "w").write(night)
     day, night = gen_footer(w, s)
-    open("garden-footer.svg", "w").write(day)
-    open("garden-footer-night.svg", "w").write(night)
+    open("footer.svg", "w").write(day)
+    open("footer-night.svg", "w").write(night)
     open(STATE, "w").write(state + "\n")
     print(f"scene rendered: {state}")
 
